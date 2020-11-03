@@ -33,9 +33,7 @@ def achaCEP(estado, cidade, rua):
 
 def achaCoord(endereco):
     locale = 'br'
-    url = 'https://graphhopper.com/api/1/geocode?q=' + endereco + '&locale=' + locale + '&debug=true&key=' + GRAPHHOPPER_API_KEY
-    print (url)
-    exit()
+    url = 'https://graphhopper.com/api/1/geocode?q=' + endereco + '&locale=' + locale + '&key=' + GRAPHHOPPER_API_KEY
     resposta = requests.get(url)
     resposta = resposta.json()
 
